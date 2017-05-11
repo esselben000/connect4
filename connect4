@@ -22,7 +22,7 @@ public class conect4 {
         //prints the board
         for (int w = 0; width > w; w += 1) {
             for (int h = 0; height > h; h += 1) {
-                System.out.print(board[w][h]);
+                System.out.print(board[w][h] + "\t");
             }
             System.out.println();
         }
