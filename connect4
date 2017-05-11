@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class conect4 {
+
+	public int width=6;
+	public int height=6;
+	public String[][] board = new String[height][width];
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		conect4 c = new conect4();
+		c.CreateBoard();
+		c.PrintBoard();
+	}
+    public void CreateBoard(){
+        for (int w = 0; width > w; w += 1) {
+            for (int h = 0; height > h; h += 1) {
+                board[w][h] = "*";
+            }
+        }
+    }
+    public void PrintBoard(){
+        //prints the board
+        for (int w = 0; width > w; w += 1) {
+            for (int h = 0; height > h; h += 1) {
+                System.out.print(board[w][h]);
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+}
